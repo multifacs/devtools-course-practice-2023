@@ -21,7 +21,7 @@ set_tests_properties (${prefix}_get_help PROPERTIES
     LABELS "${MODULE}")
 
 add_test(
-    NAME ${prefix}_test1
+    NAME ${prefix}_test_plus
     COMMAND ${APPLICATION} 1 + 1
 )
 set_tests_properties (${prefix}_test1 PROPERTIES
@@ -29,7 +29,7 @@ set_tests_properties (${prefix}_test1 PROPERTIES
     LABELS "${MODULE}")
 
 add_test(
-    NAME ${prefix}_test1
+    NAME ${prefix}_test_minus
     COMMAND ${APPLICATION} 2 - 1
 )
 set_tests_properties (${prefix}_test1 PROPERTIES
@@ -37,7 +37,7 @@ set_tests_properties (${prefix}_test1 PROPERTIES
     LABELS "${MODULE}")
 
 add_test(
-    NAME ${prefix}_test1
+    NAME ${prefix}_test_mult
     COMMAND ${APPLICATION} 1 * 5
 )
 set_tests_properties (${prefix}_test1 PROPERTIES
@@ -46,7 +46,7 @@ set_tests_properties (${prefix}_test1 PROPERTIES
 
 
 add_test(
-    NAME ${prefix}_test1
+    NAME ${prefix}_test_div
     COMMAND ${APPLICATION} 9 / 3
 )
 set_tests_properties (${prefix}_test1 PROPERTIES
