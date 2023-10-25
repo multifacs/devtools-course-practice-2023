@@ -17,7 +17,7 @@ add_test(
     COMMAND ${APPLICATION} --help
 )
 set_tests_properties (${prefix}_get_help PROPERTIES
-    PASS_REGULAR_EXPRESSION "This program considers the integral"
+    PASS_REGULAR_EXPRESSION "This program solves bigInts"
     LABELS "${MODULE}")
 
 add_test(
@@ -26,4 +26,29 @@ add_test(
 )
 set_tests_properties (${prefix}_test1 PROPERTIES
     PASS_REGULAR_EXPRESSION "2\nsuccess"
+    LABELS "${MODULE}")
+
+add_test(
+    NAME ${prefix}_test1
+    COMMAND ${APPLICATION} 2 - 1
+)
+set_tests_properties (${prefix}_test1 PROPERTIES
+    PASS_REGULAR_EXPRESSION "1\nsuccess"
+    LABELS "${MODULE}")
+
+add_test(
+    NAME ${prefix}_test1
+    COMMAND ${APPLICATION} 1 * 5
+)
+set_tests_properties (${prefix}_test1 PROPERTIES
+    PASS_REGULAR_EXPRESSION "5\nsuccess"
+    LABELS "${MODULE}")
+
+
+add_test(
+    NAME ${prefix}_test1
+    COMMAND ${APPLICATION} 9 / 3
+)
+set_tests_properties (${prefix}_test1 PROPERTIES
+    PASS_REGULAR_EXPRESSION "3\nsuccess"
     LABELS "${MODULE}")
