@@ -32,30 +32,30 @@ std::string CLPApplication::operator()(int argc, const char** argv) {
     if (op == "-") {
       os << a - b;
     }
-    if (op == "/") {
-      os << a / b;
-    }
+    // if (op == "/") {
+    //   os << a / b;
+    // }
     if (op == "*") {
       os << a * b;
     }
-    if (op == ">") {
-      os << (a > b) ? "True" : "False";
-    }
-    if (op == "<") {
-      os << (a < b) ? "True" : "False";
-    }
-    if (op == ">=") {
-      os << (a >= b) ? "True" : "False";
-    }
-    if (op == "<=") {
-      os << (a <= b) ? "True" : "False";
-    }
-    if (op == "==") {
-      os << (a == b) ? "True" : "False";
-    }
-    if (op == "!=") {
-      os << (a != b) ? "True" : "False";
-    }
+    // if (op == ">") {
+    //   os << (a > b) ? "True" : "False";
+    // }
+    // if (op == "<") {
+    //   os << (a < b) ? "True" : "False";
+    // }
+    // if (op == ">=") {
+    //   os << (a >= b) ? "True" : "False";
+    // }
+    // if (op == "<=") {
+    //   os << (a <= b) ? "True" : "False";
+    // }
+    // if (op == "==") {
+    //   os << (a == b) ? "True" : "False";
+    // }
+    // if (op == "!=") {
+    //   os << (a != b) ? "True" : "False";
+    // }
 
     std::cout << os.str() << std::endl;
     return "success";
