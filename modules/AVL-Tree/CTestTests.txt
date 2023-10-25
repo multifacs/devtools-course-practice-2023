@@ -25,7 +25,7 @@ add_test(
     COMMAND ${APPLICATION} --123
 )
 set_tests_properties (${prefix}_arg_err_2 PROPERTIES
-    PASS_REGULAR_EXPRESSION "Invalid argument, try --help or -h commands"
+    PASS_REGULAR_EXPRESSION "Invalid argument amount, try --help or -h commands"
     LABELS "${MODULE}")
 
 add_test(
