@@ -22,15 +22,15 @@ set_tests_properties (${prefix}_get_help PROPERTIES
 
 add_test(
     NAME ${prefix}_test1
-    COMMAND ${APPLICATION} -test1 4 20 5 1 3
+    COMMAND ${APPLICATION} --test1 4 20 5 1 3
 )
 set_tests_properties (${prefix}_test1 PROPERTIES
-    PASS_REGULAR_EXPRESSION "20\nsuccess"
+    PASS_REGULAR_EXPRESSION "1\nsuccess"
     LABELS "${MODULE}")
 
 add_test(
     NAME ${prefix}_test2
-    COMMAND ${APPLICATION} -test2 4 20 5 1 3
+    COMMAND ${APPLICATION} --test2 4 20 5 1 3
 )
 set_tests_properties (${prefix}_test2 PROPERTIES
     PASS_REGULAR_EXPRESSION "20\nsuccess"
@@ -38,7 +38,7 @@ set_tests_properties (${prefix}_test2 PROPERTIES
 
 add_test(
     NAME ${prefix}_test3
-    COMMAND ${APPLICATION} -test3 4 2 5 1 3
+    COMMAND ${APPLICATION} --test3 4 2 5 1 3
 )
 set_tests_properties (${prefix}_test3 PROPERTIES
     PASS_REGULAR_EXPRESSION "1\nsuccess"
