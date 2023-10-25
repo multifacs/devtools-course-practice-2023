@@ -264,6 +264,7 @@ add_test(
 set_tests_properties (${prefix}_Big_Int_Bool_Less_Or_Equal_Left_And_Right_Negative PROPERTIES
     PASS_REGULAR_EXPRESSION "It`s false!"
     LABELS "${MODULE}"
+)
 
 add_test(
     NAME ${prefix}_Big_Int_Bool_Equal_Left_And_Right_Positive
