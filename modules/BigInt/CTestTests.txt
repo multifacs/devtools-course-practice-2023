@@ -40,12 +40,12 @@ add_test(
     NAME ${prefix}_test_mult
     COMMAND ${APPLICATION} 1 * 5
 )
-set_tests_properties (${prefix}_test_div PROPERTIES
+set_tests_properties (${prefix}_test_mult PROPERTIES
     PASS_REGULAR_EXPRESSION "5\nsuccess"
     LABELS "${MODULE}")
 
 add_test(
-    NAME ${prefix}_test_mult
+    NAME ${prefix}_test_div
     COMMAND ${APPLICATION} 123 / 3
 )
 set_tests_properties (${prefix}_test_div PROPERTIES
