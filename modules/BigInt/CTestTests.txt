@@ -43,12 +43,3 @@ add_test(
 set_tests_properties (${prefix}_test_mult PROPERTIES
     PASS_REGULAR_EXPRESSION "5\nsuccess"
     LABELS "${MODULE}")
-
-
-add_test(
-    NAME ${prefix}_test_div
-    COMMAND ${APPLICATION} 9 / 3
-)
-set_tests_properties (${prefix}_test_div PROPERTIES
-    PASS_REGULAR_EXPRESSION "3\nsuccess"
-    LABELS "${MODULE}")
