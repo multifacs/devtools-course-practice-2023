@@ -1,4 +1,4 @@
-// Copyright 2022 Popp Maksim
+// Copyright 2023 Matveyev Sergey
 
 #include <gtest/gtest.h>
 #include "include/template_heap.h"

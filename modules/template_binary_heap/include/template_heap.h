@@ -1,11 +1,12 @@
-// Copyright 2022 Popp Maksim & Pyatckin Nikolay
+// Copyright 2023 Matveyev Sergey
 
-#ifndef MODULES_POPP_MAKSIM_TEMPLATE_BINARY_HEAP_INCLUDE_TEMPLATE_HEAP_H_
-#define MODULES_POPP_MAKSIM_TEMPLATE_BINARY_HEAP_INCLUDE_TEMPLATE_HEAP_H_
+#ifndef MODULES_TEMPLATE_BINARY_HEAP_INCLUDE_TEMPLATE_HEAP_H_
+#define MODULES_TEMPLATE_BINARY_HEAP_INCLUDE_TEMPLATE_HEAP_H_
 
 #include <vector>
 #include <algorithm>
 #include <iostream>
+#include <utility>
 
 template <typename T>
 class THeap {
@@ -138,4 +139,4 @@ size_t THeap<T>::GetSize() {
     return vec.size();
 }
 
-#endif  // MODULES_POPP_MAKSIM_TEMPLATE_BINARY_HEAP_INCLUDE_TEMPLATE_HEAP_H_
+#endif  // MODULES_TEMPLATE_BINARY_HEAP_INCLUDE_TEMPLATE_HEAP_H_
