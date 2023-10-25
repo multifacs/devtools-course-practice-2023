@@ -2,11 +2,12 @@
 
 #include <iostream>
 
-#include "include/big_int_application.h"
+#include "include/bigInt_application.h"
 
-int main(int argc, const char* argv[]) {
-    BigIntApplication app;
-    auto output = app(argc, argv);
-    std::cout << output << std::endl;
-    return 0;
+int main(int argc, const char** argv) {
+  CLPApplication app;
+  std::string output = app(argc, argv);
+  std::cout << output << std::endl;
+  return 0;
 }
+
