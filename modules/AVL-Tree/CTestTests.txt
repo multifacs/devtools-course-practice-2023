@@ -21,6 +21,14 @@ set_tests_properties (${prefix}_get_help PROPERTIES
     LABELS "${MODULE}")
 
 add_test(
+    NAME ${prefix}_arg_err_2
+    COMMAND ${APPLICATION} --123
+)
+set_tests_properties (${prefix}_arg_err_2 PROPERTIES
+    PASS_REGULAR_EXPRESSION "Invalid argument, try --help or -h commands"
+    LABELS "${MODULE}")
+
+add_test(
     NAME ${prefix}_test1
     COMMAND ${APPLICATION} --test1 4 20 5 1 3
 )
